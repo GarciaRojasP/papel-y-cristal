@@ -4,7 +4,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -52,6 +52,7 @@
     --mb-3: 3rem;
 
     /*========== Paddings ==========*/
+    --pd-medium:2rem;
     --pd-normal:1rem;
 
     /*========== z index ==========*/
@@ -62,7 +63,8 @@
 
 @media screen and (min-width: 968px) {
   :root {
-      --big-font-size: 3rem;
+      --big-font-size: 3.5rem;
+      --medium-big-font-size:3rem;
       --h1-font-size: 1.75rem;
       --h2-font-size: 1.5rem;
       --h3-font-size: 1.25rem;

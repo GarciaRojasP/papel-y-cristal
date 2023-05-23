@@ -1,0 +1,47 @@
+.banner{
+    height: 50vh;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%), 
+                url("../img/banners/banner-1-escritorio.png");
+    background-size: cover;
+    background-position: right;
+    padding: var(--pd-normal);
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.banner__title{
+    color: #fff;
+    font-size: var(--medium-big-font-size);
+    margin: 0; 
+    text-shadow: 0px 0px 4px #000;
+}
+
+.banner__description{
+    font-size: var(--normal-font-size);
+    text-shadow: 0px 0px 2px #000;
+    margin: var(--mb-1) 0;
+}
+
+@media screen and (min-width: 768px) {
+    .banner{
+        background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%), 
+                          url("../img/banners/banner-1.png");
+        background-position: right bottom;
+        padding: var(--pd-medium);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+.banner{
+    height: 65vh;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner{
+        background-position: right center;
+        }
+    }
