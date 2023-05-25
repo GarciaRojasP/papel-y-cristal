@@ -19,10 +19,10 @@
     background-color: var(--body-color);
   }
 
-  /*@media screen and (min-width: 768px){
+  @media screen and (min-width: 768px){
     .header{
       top: 0;
       bottom: initial;
       padding: 0 1rem;
     }
-  }*/
+  }

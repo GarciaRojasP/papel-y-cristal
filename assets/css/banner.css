@@ -35,13 +35,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-.banner{
-    height: 65vh;
+    .banner{
+        height: 55vh;
+        background-position: right center;
     }
 }
-
-@media screen and (min-width: 1440px) {
-    .banner{
-        background-position: right center;
-        }
-    }
