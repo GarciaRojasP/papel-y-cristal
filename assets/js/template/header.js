@@ -20,7 +20,7 @@ header.setAttribute("id", "header");
                                     </a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="producto.html" class="nav__link">
+                                    <a href="productos.html" class="nav__link">
                                         <i class="uil uil-shopping-bag nav__icon"></i>
                                         Productos
                                     </a>
