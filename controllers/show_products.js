@@ -14,14 +14,13 @@ const crearNuevaCardProduct = (id, imagen, nombre, precio) =>{
             <h3 class="producto__titulo">${nombre}</h3>
             <p class="producto__precio">${precio}</p>
 
-            <div class="producto-ctn__botones">
-
-                <a href="descripcion_producto.html?id=${id}" class="boton btn_informarcion">
-                    <i class="fa-solid fa-plus"></i>Informacion
+            <div class="producto-ctn__button">
+                <a href="descripcion_producto.html?id=${id}" class="producto__link">
+                    ver más
                 </a>
 
-                <button class="boton btn_agregar">
-                    <i class="fa-solid fa-cart-shopping"></i>Agregar
+                <button class="button button--small button--link">
+                    <i class="uil uil-shopping-cart button__icon"></i>
                 </button>
             </div>
 

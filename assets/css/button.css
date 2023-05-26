@@ -26,6 +26,10 @@
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
   }
+
+  .button__icon:hover{
+    font-size: 1.40rem;
+  }
   
   .button--white{
     background-color: #fff;
@@ -56,6 +60,7 @@
     padding: 0;
     background-color: transparent;
     color: var(--first-color);
+    cursor: pointer;
   }
   
   .button--link:hover{
