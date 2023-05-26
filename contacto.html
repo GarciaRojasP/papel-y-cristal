@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/contacto-y-mapa.css">
+    <link rel="stylesheet" href="assets/css/informacion.css">
+    <link rel="stylesheet" href="assets/css/formulario.css">
     <link rel="stylesheet" href="assets/css/button.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
@@ -26,7 +29,114 @@
     <!--==================== MAIN ====================-->
     <main>
 
-        <!--==================== productos ====================-->
+        <!--==================== CONTACTO ====================-->
+
+        <section class="contact section" id="contact">
+
+            <div class="contact__container container grid">
+                <div class="informacion">
+                    <h2  class="section__title">Información</h2>
+                    <div class="informacion-ctn">
+                        <div class="conten">
+                            <div class="icon">
+                                <i class="uil uil-map-marker icon-contacto"></i>
+                            </div>
+                            <div class="info-icon">
+                                <h3>dirección</h3>
+                                <p>Desarrollo Urbano Quetzalcóatl, Iztapalapa, 09700, CDMX</p>
+                            </div>
+                        </div>
+        
+                        <div class="conten">
+                            <div class="icon">
+                                <i class="uil uil-phone-alt icon-contacto"></i>
+                            </div>
+                            <div class="info-icon">
+                                <h3>teléfono</h3>
+                                <p>+5573265634</p>
+                            </div>
+                        </div>
+        
+                        <div class="conten">
+                            <div class="icon">
+                                <i class="uil uil-clock icon-contacto"></i>
+                            </div>
+                            <div class="info-icon">
+                                <h3>horario de atención</h3>
+                                <p>Lun. a Vie. - 8:00am a 20:00pm</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <img src="assets/svg/contacto.svg" alt="imagen de sobre" class="contact__img">
+                </div>
+
+                <form action="https://formsubmit.co/75dfb2d9fd093b82f85cb0cdede6fc29" method="POST" class="formulario grid" id="formulario">
+                    <h2  class="section__title">Contacto</h2>
+                    <fieldset class="fieldset">
+
+                        <div class="formulario__grupo" id="grupo__usuario">
+                            <div class="formulario__grupo-input">
+                                <input type="text" id="nombre" name="nombre" class="formulario__input" placeholder="Nombre Completo:" required data-tipo="nombreCompleto">
+                                <label class="formulario__label" for="nombre">Nombre Completo</label>
+                                <i class="formulario__validacion-estado uil uil-times-circle"></i>
+                                <span class="formulario__input-error">El campo no puede estar vacío</span>
+                            </div>
+                        </div>
+
+                        <div class="formulario__grupo" id="grupo__email">
+                            <div class="formulario__grupo-input">
+                                <input type="email" id="email" name="email" class="formulario__input" required placeholder="Correo Electrónico:" data-tipo="email">
+                                <label class="formulario__label" for="email">Correo Electrónico:</label>
+                                <i class="formulario__validacion-estado uil uil-times-circle"></i>
+                                <span class="formulario__input-error">Ingrese algun correo</span>
+                            </div>
+                        </div>
+
+                        <div class="formulario__grupo" id="grupo__asunto">
+                            <div class="formulario__grupo-input">
+                                <input type="text" id="asunto" name="asunto" class="formulario__input" placeholder="Asunto:" required data-tipo="asunto">
+                                <label class="formulario__label" for="asunto">Asunto:</label>
+                                <i class="formulario__validacion-estado uil uil-times-circle"></i>
+                                <span class="formulario__input-error">El campo no puede estar vacío</span>
+                            </div>
+                        </div>
+
+                        <div class="formulario__grupo" id="grupo__mensaje">
+                            <div class="formulario__grupo-input">
+                                <textarea id="mensaje" name="mensaje" cols="70" rows="10" class="formulario__input textarea" placeholder="Mensaje:" required data-tipo="mensaje"></textarea>
+                                <label class="formulario__label" for="mensaje">Mensaje:</label>
+                                <i class="formulario__validacion-estado uil uil-times-circle"></i>
+                                <span class="formulario__input-error">El campo no puede estar vacío</span>
+                            </div>
+                            
+                        </div>
+
+                    </fieldset>
+
+                    <button type="submit" class="button button--flex enviar">
+                        Enviar
+                        <i class="uil uil-message button__icon"></i>
+                    </button>
+
+                    <input type="hidden" name="_next" value="https://patricia-garcia.vercel.app/thanks.html">
+                    <input type="hidden" name="_template" value="table">
+                    
+                </form>
+            </div>
+        </section>
+
+        <!--==================== MAPA ====================-->
+        <section class="mapa">
+
+            <h3 class="section__title">Nuestra Ubicación</h3>
+            <p class="mapa__descripcion">Nuestro establecimiento está ubicado en el corazón de la ciudad</p>
+
+           <div class="mapa-contenido">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.9488013551077!2d-99.04613378917405!3d19.328027843936717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce038f1c4e8fe7%3A0xef627acb657c78f6!2sCablebus%20Quetzalc%C3%B3atl!5e0!3m2!1ses-419!2sbr!4v1679517075923!5m2!1ses-419!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+
+        </section>
     
 
     </main>
