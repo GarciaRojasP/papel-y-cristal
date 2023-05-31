@@ -8,5 +8,5 @@ footer.classList.add("footer");
         const footer_copy = document.createElement("p");
         footer_bg.appendChild(footer_copy);
         footer_copy.classList.add("footer__copy");
-        footer_copy.innerHTML = "&#169; copyright portafolio 2023 | Patricia García";
+        footer_copy.innerHTML = "&#169; copyright Papel y Cristal 2023 | Patricia García";
 
